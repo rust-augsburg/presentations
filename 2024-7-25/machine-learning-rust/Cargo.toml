@@ -1,0 +1,12 @@
+[package]
+name = "ai"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.86"
+candle = { package = "candle-core", git = "https://github.com/huggingface/candle.git", version = "0.6" }
+candle-nn = { git = "https://github.com/huggingface/candle.git", version = "0.6" }
+ndarray = "0.15.6"
+plotters = "0.3.6"
+rand = { version = "0.8.5", features = ["small_rng"] }

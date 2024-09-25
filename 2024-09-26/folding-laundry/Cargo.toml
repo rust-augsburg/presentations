@@ -1,0 +1,13 @@
+[package]
+name = "folding_laundry"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+thiserror = "1"
+# Async addendum
+futures = "0.3.30"
+tokio = { version = "*", features = ["time", "rt-multi-thread"] }
+
+[dev-dependencies]
+tokio = { version = "*", features = ["macros", "rt-multi-thread", "time"] }

@@ -1,10 +1,10 @@
 //! Problem: We want to read 5 big files in dedicated threads and deal with their results.
 //! We spawn a dedicated thread to process each file and then deal with the join handles of
 //! those threads.
-//! 
+//!
 //! This task is very different to all prior tasks mainly because we are dealing with side effects here.
-//! 
-//! Hint: In a real world example, you would be very interested in checking out the 
+//!
+//! Hint: In a real world example, you would be very interested in checking out the
 //! [`rayon`](https://github.com/rayon-rs/rayon) crate.
 
 // region:    --- Boilerplate

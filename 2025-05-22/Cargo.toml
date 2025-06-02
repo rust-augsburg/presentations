@@ -1,0 +1,34 @@
+[package]
+edition = "2024"
+name = "guided_telemetry"
+version = "0.1.0"
+
+[dependencies]
+anyhow = "1"
+axum = "0.8.4"
+dotenvy = "0.15"
+rand = { version = "0.9" }
+uuid = { version = "1.16", features = ["v4"] }
+
+tracing = "0.1"
+tracing-core = { version = "0.1" }
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+
+tokio = { version = "1", features = ["macros", "rt-multi-thread"] }
+
+tower = { version = "0.5" }
+tower-http = { version = "0.6", features = ["trace"] }
+
+opentelemetry = { version = "0.29", features = ["logs"] }
+opentelemetry-otlp = { version = "0.29.0", features = [
+    "grpc-tonic",
+    "metrics",
+] }
+opentelemetry-semantic-conventions = { version = "0.29.0", features = [
+    "semconv_experimental",
+] }
+opentelemetry-stdout = { version = "0.29.0", features = ["metrics", "trace"] }
+# this crate name throws in an underscore for good measure
+opentelemetry_sdk = { version = "0.29", features = ["logs"] }
+# notice how the tracing-opentelemetry bridge's version number is not in sync with the otel crates's version number :-)
+tracing-opentelemetry = "0.30"

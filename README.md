@@ -6,3 +6,5 @@
   + [Skalierbares Design prozeduraler Makros](<./2023-08-31/Skalierbares Design prozeduraler Makros/presentation.pdf>)
 + 2024-09-26
   + [Folding Laundry - From zipping, filtering and folding – when your laundry gets Rusty](<./2024-09-26/folding-laundry/Chaining.pdf>)
++ 2025-05-22
+  + [OTEL - A Practical Guide to Telemetry in Rust](<./2025-05-22/README.md>)
